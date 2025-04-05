@@ -1,0 +1,45 @@
+@import '../../../assets/styles/variables';
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+  
+    label {
+      @include body-text-lg($gray-100)
+    }
+  
+    .custom-input {
+      @include body-text($text-head);
+      padding: 12px 16px;
+      background: transparent;
+      border: 2px solid $gray-border;
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+  
+      &::placeholder {
+        color: $text-secondary;
+      }
+  
+      &:focus {
+        border-color: $primary-main;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      }
+      &:disabled {
+        @include body-text($readOnly-input);
+        cursor: not-allowed;
+  
+        &::placeholder {
+          color: $gray-50;
+        }
+      }
+    }
+
+    .error {
+      @include heading-xxsm($danger-main);
+
+    }
+  }

@@ -1,0 +1,57 @@
+@import '../../../assets/styles/variables';
+
+.user-header {
+    background: linear-gradient(90deg, $primary-dark, $primary-main);
+    color: $white;
+    padding: 10px 32px;
+    box-shadow: $shadow-m;
+    z-index: 2;
+    border-bottom: 1px solid $white;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  
+    &__logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  
+    &__nav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+  
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+  
+        &:hover {
+          color: #dbeafe;
+        }
+  
+
+      }
+    }
+
+    &__login-btn {
+      @include heading-m-normal($white);
+      padding: 8px 30px;
+      border-radius: 20px;
+      border: 2px solid $white;
+      cursor: pointer;
+      background-color: transparent;
+
+      &:hover {
+        @include heading-m-normal($danger-main);
+        background-color: $white;
+      }
+    }
+  }
+  

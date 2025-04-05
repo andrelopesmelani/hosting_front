@@ -1,0 +1,39 @@
+@import "@/assets/styles/variables";
+
+.hosting-plans {
+  padding: 60px 20px 100px 20px;
+  border: 1px solid $gray-border;
+  border-radius: 20px;
+  box-shadow: $shadow-m;
+  background-color: $white;
+
+  .loading-hosting {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+        width: 60px;
+        color: $primary-main;
+    }
+}
+  .hosting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 2.5rem;
+      color: #1f2937;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+      color: #6b7280;
+      margin-bottom: 3rem;
+    }
+  }
+}

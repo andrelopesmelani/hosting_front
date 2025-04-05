@@ -1,0 +1,37 @@
+@import '../../../assets/styles/variables';
+
+.year-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    label {
+        @include body-text-lg($gray-100)
+      }
+
+    .year-selector {
+        display: flex;
+        gap: 1rem;
+      
+        .year-option {
+          padding: 0.6rem 1.2rem;
+          border: 2px solid #1b59f8;
+          background-color: transparent;
+          border-radius: 8px;
+          font-weight: bold;
+          color: #1b59f8;
+          cursor: pointer;
+          transition: 0.3s;
+      
+          &.selected,
+          &:hover {
+            background-color: #1b59f8;
+            color: #fff;
+          }
+        }
+      }
+
+}
+
+
+  

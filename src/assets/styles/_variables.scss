@@ -1,0 +1,314 @@
+$primary-main: #1b59f8;
+$primary-light: #a7bffd;
+$primary-dark: #1442b8;
+$primary-hover: #1b59f814;
+
+$success-main: #12b937;
+$success-light: #6fb97f;
+$success-dark: #0c8026;
+$success-hover: #0c802614;
+
+$warning-main: #fdd944;
+$warning-light: #fde47f;
+$warning-dark: #ccaf37;
+$warning-hover: #cc7a0014;
+
+$danger-main: #ff445d;
+$danger-light: #ffb2bd;
+$danger-dark: #992938;
+$danger-hover: #99293814;
+
+$orange: #ff9900;
+$orange-light: #ffcc80;
+$orange-dark: #cc7a00;
+$orange-secondary: #f65834;
+
+$purple: #6a32b2;
+$purple-light: #d4b2ff;
+$purple-dark: #9747ff;
+
+$text-head: #3a424e;
+$text-body: #3a424ee5;
+$text-secondary: #3a424e80;
+
+$gray-line: #dadada;
+$gray-background: #fafafa;
+$gray-border: #e6e6e6e5;
+$readOnly-input: #7f8897;
+
+$gray-100: #3a424e;
+$gray-90: #3a424ee5;
+$gray-80: #3a424ecc;
+$gray-70: #3a424eb2;
+$gray-60: #3a424e99;
+$gray-50: #3a424e80;
+$gray-40: #3a424e66;
+$gray-30: #3a424e4d;
+$gray-20: #3a424e33;
+$gray-10: #3a424e1a;
+$gray-5: #3a424e0d;
+
+$gray-avatar: #d8d9dc;
+
+$white: #ffffff;
+
+$cyan: #00b5dd;
+$cyan-dark: #a7bffd;
+$cyan-hover: #00b5dd1a;
+
+$line-border-2: #c9c9c9;
+
+//Shadows
+$shadow-bottom: 0px 2px 2px 0px rgba(0, 0, 0, 0.07);
+$shadow-xs: 2px 2px 2px 0px rgba(0, 0, 0, 0.07);
+$shadow-m: 4px 4px 4px 0px rgba(0, 0, 0, 0.07);
+$shadow-l: 6px 6px 8px 0px rgba(0, 0, 0, 0.14);
+$shadow-xl: 8px 8px 16px 0px rgba(0, 0, 0, 0.14);
+$shadow-bs-xs: 0px 0px 1px 0px rgba(0, 0, 0, 0.1),
+  2px 1px 2px 0px rgba(0, 0, 0, 0.09), 4px 3px 3px 0px rgba(0, 0, 0, 0.05),
+  8px 5px 4px 0px rgba(0, 0, 0, 0.01), 12px 8px 4px 0px rgba(0, 0, 0, 0);
+$shadow-bs-s: 1px 1px 3px 0px rgba(0, 0, 0, 0.1),
+  4px 4px 6px 0px rgba(0, 0, 0, 0.09), 9px 9px 8px 0px rgba(0, 0, 0, 0.05),
+  16px 17px 9px 0px rgba(0, 0, 0, 0.01), 25px 26px 10px 0px rgba(0, 0, 0, 0);
+$shadow-bs-m: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),
+  8px 7px 11px 0px rgba(0, 0, 0, 0.09), 19px 15px 14px 0px rgba(0, 0, 0, 0.05),
+  33px 27px 17px 0px rgba(0, 0, 0, 0.01), 52px 42px 19px 0px rgba(0, 0, 0, 0);
+$shadow-bs-l: 3px 3px 9px 0px rgba(0, 0, 0, 0.1),
+  13px 12px 17px 0px rgba(0, 0, 0, 0.09), 29px 26px 23px 0px rgba(0, 0, 0, 0.05),
+  51px 46px 27px 0px rgba(0, 0, 0, 0.01), 80px 72px 30px 0px rgba(0, 0, 0, 0);
+
+//Typography text
+@mixin heading-xxxl($color) {
+  color: $color !important;
+  font-size: 40px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xxl-head($color) {
+  color: $color !important;
+  font-size: 28px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xxl($color) {
+  color: $color !important;
+  font-size: 28px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xxl-text($color) {
+  color: $color !important;
+  font-size: 28px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xl-text($color) {
+  color: $color !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xl($color) {
+  color: $color !important;
+  font-size: 22px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xl-sm($color) {
+  color: $color !important;
+  font-size: 22px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-l($color) {
+  color: $color !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-text($color) {
+  color: $color !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-text-sm($color) {
+  color: $color !important;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-m-normal($color) {
+  color: $color !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+@mixin heading-m($color) {
+  color: $color !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-sm($color) {
+  color: $color !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-s($color) {
+  color: $color !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125.303% !important;
+}
+
+@mixin heading-xxxs($color) {
+  color: $color !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 125% !important;
+}
+
+@mixin heading-xxxs-bold($color) {
+  color: $color !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 125% !important;
+}
+
+@mixin heading-xxsm($color) {
+  color: $color !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 125% !important;
+}
+
+@mixin heading-xs($color) {
+  color: $color !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 125% !important;
+}
+
+@mixin body-text($color) {
+  color: $color !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 161.104% !important;
+}
+
+@mixin body-text-lg-bold($color) {
+  color: $color !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 134% !important;
+}
+
+@mixin body-text-lg($color) {
+  color: $color !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 134% !important;
+}
+
+@mixin body-text-m($color) {
+  color: $color !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 134% !important;
+}
+
+@mixin body-text-sm($color) {
+  color: $color !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 134% !important;
+}
+
+@mixin body-text-xs($color) {
+  color: $color !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 125% !important;
+}
+
+@mixin text-xs($color) {
+  color: $color !important;
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 125% !important;
+}
+
+@mixin text-sssx($color) {
+  color: $color !important;
+  font-size: 10px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 125% !important;
+}
+
+@mixin list-items($color) {
+  color: $color !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 36px !important;
+}
+
+@mixin modal-text($color) {
+  color: $color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 161.104%;
+}
+
+@mixin grid-container($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: auto;
+  gap: 28px;
+}
+
+:export {
+  primary: $primary-main;
+}

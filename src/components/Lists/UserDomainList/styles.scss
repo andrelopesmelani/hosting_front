@@ -1,0 +1,116 @@
+@import "../../../assets/styles/variables";
+
+.user-list-container {
+  width: 97%;
+  background: $white;
+  padding: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 15px;
+  text-align: left;
+  .status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: capitalize;
+
+
+    &.active {
+        background-color: #dcfce7;
+        @include body-text-m($success-main);
+      }
+  
+      &.inactive {
+        background-color: #fee2e2;
+        @include body-text-m($danger-main);
+      }
+  }
+}
+
+.user-table thead {
+  color: $text-head;
+  border-bottom: 1px solid $gray-border;
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid $gray-border;
+  padding: 10px 0px;
+  @include body-text-sm($text-body);
+  cursor: pointer;
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .eye {
+      width: 20px;
+      background-color: $primary-hover;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+
+      &:hover {
+        background-color: $primary-light;
+        }
+      svg {
+        color: $primary-main;
+      }
+
+
+      &:hover {
+    
+      }
+    }
+
+    .trash {
+        background-color: $danger-hover;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        z-index: 200;
+        &:hover {
+            background-color: $danger-light;
+          }
+        svg {
+            color: $danger-main;
+   
+        }
+
+
+    }
+  }
+}
+
+.user-table tbody tr.even {
+  background: $white;
+}
+
+.user-table tbody tr.odd {
+  background: #edf6ff;
+}
+
+.user-table tbody tr:hover {
+  background: #edf6ff;
+  transition: 0.3s ease;
+}
+
+.no-users {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  margin-top: 10px;
+}

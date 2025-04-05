@@ -1,0 +1,19 @@
+.user-footer {
+    background-color: #1f2937;
+    color: #cbd5e1;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: auto;
+    z-index: 2;
+  
+    &__content {
+      max-width: 1280px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+  
+      p {
+        margin: 0.25rem 0;
+      }
+    }
+  }
+  

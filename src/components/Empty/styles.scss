@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables';
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  padding: 24px 24px 0 24px;
+  margin: auto;
+
+  .contain{
+    margin-bottom: -20px;
+  }
+
+  &__title {
+    text-align: center;
+    @include heading-xl($text-head);
+  }
+
+  &__description {
+    text-align: center;
+    @include heading-m($gray-50);
+  }
+}

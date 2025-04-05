@@ -1,0 +1,203 @@
+@import "../../../assets/styles/variables";
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  .login {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    margin: 160px auto;
+  
+    .detail-top {
+      position: absolute;
+      top: -500px;
+      right: -600px;
+      z-index: 1;
+      animation: animationDetail 20s linear infinite;
+    }
+  
+    .detail-bottom {
+      position: absolute;
+      left: -500px;
+      bottom: -400px;
+      z-index: 1;
+      animation: animationDetail 20s linear infinite;
+    }
+  
+    .content {
+      position: relative;
+      width: 527px;
+      padding: 48px 24px;
+      border-radius: 12px;
+      border: 1px solid rgba($color: #000000, $alpha: 0.1);
+      background: $white;
+      box-shadow: $shadow-m;
+      z-index: 100;
+  
+      img {
+        position: absolute;
+        top: -60px;
+        left: 0;
+      }
+  
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        p {
+          @include heading-xxxl($text-head);
+          margin: 0 0 8px 0;
+        }
+      }
+  
+      .subtitle {
+        @include body-text-m($text-secondary);
+        display: block;
+        margin-bottom: 28px;
+      }
+  
+      .container-input {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+  
+        svg {
+          position: absolute;
+          top: 16px;
+          right: 12px;
+          color: $text-secondary;
+        }
+  
+        .error {
+          @include heading-xxsm($danger-main);
+          padding-left: 10px;
+          display: block;
+        }
+      }
+  
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+  
+        .title {
+          p {
+            font-size: 22px !important;
+          }
+  
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+  
+      .loading {
+        text-align: center;
+        img {
+          position: relative;
+          top: 0;
+          margin: 150px 0 64px 0;
+        }
+  
+        p {
+          @include heading-xl-sm($text-head);
+  
+          strong {
+            font-weight: 600;
+          }
+        }
+  
+        span {
+          @include body-text-m($text-head);
+        }
+  
+        .loader {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 11px;
+          margin: 64px 0 150px 0;
+  
+          .dots {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: $primary-main;
+            animation: loader 0.5s cubic-bezier(0, 0, 0.8, 0) infinite alternate;
+  
+            &:nth-child(2) {
+              animation-delay: 0.2s;
+            }
+  
+            &:nth-child(3) {
+              animation-delay: 0.4s;
+            }
+          }
+        }
+      }
+    }
+  
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      margin-top: 38px;
+      text-align: center;
+  
+      p {
+        @include body-text-xs($text-head);
+        margin: 0;
+  
+        .signup {
+          color: $primary-main;
+        }
+      }
+  
+      span {
+        @include body-text-m($text-secondary);
+      }
+    }
+  
+    .send-button {
+      width: 100%;
+    }
+  
+    @media only screen and (max-width: 765px) {
+      width: 80%;
+    }
+  }
+}
+
+
+@keyframes animationDetail {
+  0% {
+    transform: translateY(-100px) rotate(0);
+  }
+  50% {
+    transform: translateY(0) rotate(90deg);
+  }
+  100% {
+    transform: translateY(-100px) rotate(0);
+  }
+}
+
+@keyframes loader {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 12px, 0);
+  }
+}

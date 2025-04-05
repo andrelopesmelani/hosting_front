@@ -1,0 +1,13 @@
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "'Montserrat', sans-serif" !important;
+  margin: 0;
+  padding: 0;
+  
+}
+

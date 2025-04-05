@@ -1,0 +1,131 @@
+@import "../../../../assets/styles/variables";
+
+.user-detail-container {
+  box-shadow: $shadow-l;
+  border-radius: 20px;
+  border: 1px solid $gray-border;
+  .user-card {
+    background: #fff;
+    padding: 2.5rem;
+    max-width: 500px;
+    width: 100%;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.4s ease-in-out;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      h1 {
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .banner-container {
+    width: 100%;
+    .banner {
+      height: 200px;
+      width: 100%;
+      background: linear-gradient(to right, #4f46e5, #3b82f6);
+      border-radius: 20px 20px 0 0;
+      border: 1px solid $gray-border;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+
+      .user-content {
+        border-radius: 10px;
+        width: 33%;
+        margin-right: 20px;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $gray-border;
+    
+        .content {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+
+          label {
+            @include heading-m-normal($white);
+            width: 120px;
+          }
+
+          span {
+            @include body-text-m($white);
+            text-align: end;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .avatar {
+      position: relative;
+      top: -100px;
+      right: 0;
+      height: 200px;
+      width: 200px;
+      margin-left: 20px;
+      background-color: #dadada;
+      border-radius: 50%;
+      border: 5px solid $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include heading-xxxl($white);
+      box-shadow: $shadow-m;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+    width: 100%;
+
+    .user-domains {
+      background: $white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      color: $text-head;
+      width: 100%;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      .loading-dots {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        svg{
+            width: 60px;
+            color: $primary-main;
+        }
+    }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

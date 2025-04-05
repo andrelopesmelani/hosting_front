@@ -1,0 +1,62 @@
+@import "../../../assets/styles/variables";
+
+.user-layout {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  overflow-x: hidden;
+
+  &__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+
+    .detail-top,
+    .detail-bottom {
+      position: absolute;
+      animation: animationDetail 20s linear infinite;
+
+    }
+
+    .detail-top {
+      top: -100px;
+      right: -150px;
+      width: 600px;
+    }
+
+    .detail-bottom {
+      bottom: -100px;
+      left: -220px;
+      width: 600px;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    padding: 80px 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@keyframes animationDetail {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

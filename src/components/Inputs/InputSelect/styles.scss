@@ -1,0 +1,33 @@
+@import "../../../assets/styles/variables";
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+
+  label {
+    @include body-text-lg($gray-100)
+  }
+
+  select {
+    @include body-text($text-head);
+    padding: 12px 16px;
+    background: transparent;
+    border: 2px solid $gray-border;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      border-color: $primary-main;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    option {
+      background: $white;
+      color: $text-head;
+    }
+  }
+}
