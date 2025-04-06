@@ -31,7 +31,7 @@ const YearSelector = ({ onSelect, selectedYear, label }: YearSelectorProps) => {
             className={`year-option ${selectedYear === year ? "selected" : ""}`}
             onClick={() => handleSelect(year)}
           >
-            {year} ano{year > 1 ? "s" : ""}
+            {year} year{year > 1 ? "s" : ""}
           </button>
         ))}
       </div>
